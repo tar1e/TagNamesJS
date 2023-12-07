@@ -1,0 +1,14 @@
+name: My-first-CI
+
+on: 
+  push:
+    branches:
+      - master
+
+jobs:
+  my-testing: 
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Print Hello Message
+      run  : echo "Hello word from testing"
